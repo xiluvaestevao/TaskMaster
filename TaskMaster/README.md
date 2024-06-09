@@ -1,4 +1,10 @@
 # Django-To-Do-list-with-user-authentication
-To Do list app with User Registration, Login, Search and full Create Read Update and DELETE functionality.
+Open the repository.
 
-![DEMO](../master/Django%20To%20Do%20List%20App.jpg)
+Clone it.
+
+Navigate to TaskMaster.
+
+Use 'python manage.py runserver'.
+
+Make sure you have Django installed.
