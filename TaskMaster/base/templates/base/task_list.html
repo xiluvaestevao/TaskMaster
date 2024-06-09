@@ -3,8 +3,8 @@
 <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
 <div class="header-bar">
     <div>
-        <h1>Hello {{request.user|title}}</h1>
-        <h3 style="margin:0">You have <b>{{count}}</b> incomplete task{{ count|pluralize:"s" }}</h3>
+        <h1>Hello {{request.user}},</h1>
+        <h3 style="margin:0">You have <b>{{count}}</b> incomplete task{{ count|pluralize:"s" }}.</h3>
     </div>
 
     {% if request.user.is_authenticated %}
@@ -49,8 +49,7 @@
 
     {% empty %}
     <div style="text-align: center; padding-bottom: 10px; line-height: 1em;">
-        <h3>No new tasks are created.</h3>
-        <h3>Create a <a style="text-decoration: none; color: #e53935;" href="{% url 'task-create' %}">New task</a> ! </h3>
+        <h3>Create a <a style="text-decoration: none; color: #e53935;" href="{% url 'task-create' %}">new task</a> . </h3>
     </div>
     {% endfor %}
 </div>
